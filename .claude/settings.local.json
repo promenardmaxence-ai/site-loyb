@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/skyce/Desktop/**)",
+      "Bash(powershell -Command \"Compress-Archive -Path 'Site-loyb/index.html','Site-loyb/Logo_transparent_loyb.png','Site-loyb/Maxence_photo_film.jpeg','Site-loyb/capture_site_leclat_de_soi.jpeg','Site-loyb/Design sans titre \\(1\\).png' -DestinationPath 'Site-loyb/loyb-site.zip' -Force\")",
+      "Bash(powershell Compress-Archive -Path \"Site-loyb\" -DestinationPath \"Site-loyb.zip\" -Force)",
+      "Bash(powershell Compress-Archive -Path \".\\\\*\" -DestinationPath \"c:\\\\Users\\\\skyce\\\\Desktop\\\\Site_loyb_2.zip\" -Force)",
+      "Bash(powershell Compress-Archive -Path \".\\\\*\" -DestinationPath \"c:\\\\Users\\\\skyce\\\\Desktop\\\\site-loyb_fini.zip\" -Force)"
+    ]
+  }
+}

@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Création de site web &amp; Référencement Naturel à Rouen | Loyb</title>
+  <link rel="icon" type="image/png" href="Design sans titre (1).png">
+  <meta name="description" content="Loyb crée votre site web sur mesure et améliore votre référencement à Rouen. Sites modernes, visibles sur Google, conçus pour convertir. Devis gratuit sous 24h.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Loyb — Maxence Ménard">
+
+  <!-- Géolocalisation -->
+  <meta name="geo.region" content="FR-76">
+  <meta name="geo.placename" content="Rouen, Normandie, Seine-Maritime">
+  <meta name="geo.position" content="49.4432;1.0993">
+  <meta name="ICBM" content="49.4432, 1.0993">
+
+  <!-- Open Graph (partage réseaux sociaux) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Loyb">
+  <meta property="og:title" content="Création de site web & Référencement Naturel à Rouen | Loyb">
+  <meta property="og:description" content="Loyb crée votre site web sur mesure et améliore votre référencement à Rouen. Sites modernes, visibles sur Google, conçus pour convertir. Devis gratuit sous 24h.">
+  <meta property="og:image" content="img/Logo_transparent_loyb.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Création de site web & Référencement Naturel à Rouen | Loyb">
+  <meta name="twitter:description" content="Loyb crée votre site web sur mesure et améliore votre référencement à Rouen. Sites modernes, visibles sur Google, conçus pour convertir. Devis gratuit sous 24h.">
+  <meta name="twitter:image" content="img/Logo_transparent_loyb.png">
+
+  <!-- Données structurées JSON-LD (LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Loyb",
+    "description": "Agence création de site internet et référencement naturel à Rouen et en Normandie. Sites web sur mesure, SEO et community management.",
+    "telephone": "+33603418915",
+    "email": "pro.menardmaxence@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rouen",
+      "postalCode": "76000",
+      "addressRegion": "Normandie",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 49.4432,
+      "longitude": 1.0993
+    },
+    "areaServed": [
+      "Rouen", "Elbeuf", "Sotteville-lès-Rouen", "Mont-Saint-Aignan",
+      "Maromme", "Déville-lès-Rouen", "Bois-Guillaume", "Saint-Étienne-du-Rouvray",
+      "Le Grand-Quevilly", "Le Petit-Quevilly", "Le Havre", "Seine-Maritime", "Normandie"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services Loyb",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Création de site internet",
+            "description": "Création de sites web vitrine sur mesure à Rouen et en Normandie"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Référencement naturel (SEO)",
+            "description": "Optimisation SEO et référencement Google pour les entreprises de Rouen et Normandie"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Community Management",
+            "description": "Gestion des réseaux sociaux et création de contenu photo et vidéo"
+          }
+        }
+      ]
+    },
+    "priceRange": "€€",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61574748990851"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================================
+       RESET & BASE
+    ============================================================ */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { overflow-x: hidden; max-width: 100%; }
+
+    :root {
+      --bg:          #050508;
+      --bg-2:        #08080f;
+      --bg-card:     #0e0e18;
+      --bg-card-2:   #12121e;
+      --accent:      #2563EB;
+      --accent-h:    #1d4ed8;
+      --accent-2:    #60a5fa;
+      --accent-glow: rgba(37, 99, 235, 0.25);
+      --white:       #ffffff;
+      --g1:          #e2e8f0;
+      --g2:          #94a3b8;
+      --g3:          #475569;
+      --border:      rgba(255,255,255,0.07);
+      --border-2:    rgba(255,255,255,0.12);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--white);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    img { display: block; max-width: 100%; }
+    a   { color: inherit; }
+
+    /* ============================================================
+       UTILITIES
+    ============================================================ */
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* pill badge */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 16px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border-2);
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--g2);
+      letter-spacing: .02em;
+    }
+    .badge::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent-2);
+      flex-shrink: 0;
+    }
+
+    /* section titles */
+    .section-title {
+      font-size: clamp(34px, 5vw, 60px);
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: -.03em;
+    }
+    .section-title .muted { color: var(--g3); }
+
+    /* buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 26px;
+      border-radius: 9px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      border: none;
+      transition: all .2s ease;
+      letter-spacing: .01em;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: var(--accent-h);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(37,99,235,.4);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 1px solid var(--border-2);
+    }
+    .btn-outline:hover {
+      background: rgba(255,255,255,.05);
+      border-color: rgba(255,255,255,.22);
+    }
+
+    /* fade-up scroll animation */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .65s ease, transform .65s ease;
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .d1 { transition-delay: .08s; }
+    .d2 { transition-delay: .16s; }
+    .d3 { transition-delay: .24s; }
+    .d4 { transition-delay: .32s; }
+
+    /* ============================================================
+       NAVBAR
+    ============================================================ */
+    #nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 22px 0;
+      transition: all .3s ease;
+    }
+    #nav.scrolled {
+      background: rgba(5,5,8,.88);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 0;
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+    }
+    .nav-left { display: flex; align-items: center; flex: 1; min-width: 0; }
+    .nav-right { display: flex; align-items: center; }
+    .nav-logo {
+      text-decoration: none;
+      display: flex; align-items: center; flex-shrink: 0;
+    }
+    .nav-logo img {
+      height: 92px;
+      width: auto;
+      display: block;
+      flex-shrink: 0;
+    }
+    .nav-sep {
+      width: 1px; height: 18px;
+      background: var(--border-2);
+      margin: 0 26px;
+    }
+    .nav-links {
+      display: flex; gap: 30px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 14px; font-weight: 500;
+      color: var(--g2); text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--white); }
+
+    /* hamburger */
+    .hamburger {
+      display: none; flex-direction: column;
+      gap: 5px; cursor: pointer; padding: 4px;
+    }
+    .hamburger span {
+      display: block; width: 24px; height: 2px;
+      background: var(--white); border-radius: 2px;
+      transition: all .3s;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* mobile menu */
+    .mobile-menu {
+      display: none; position: fixed;
+      inset: 0; z-index: 99;
+      background: var(--bg);
+      flex-direction: column;
+      padding: 96px 28px 40px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-links { list-style: none; flex: 1; }
+    .mobile-links li { border-bottom: 1px solid var(--border); }
+    .mobile-links a {
+      display: block; padding: 14px 0;
+      font-size: 20px; font-weight: 800;
+      color: var(--g2); text-decoration: none;
+      letter-spacing: -.02em;
+      transition: color .2s;
+    }
+    .mobile-links a:hover { color: var(--white); }
+
+    /* ============================================================
+       HERO
+    ============================================================ */
+    #hero {
+      min-height: 100vh;
+      display: flex; align-items: center;
+      padding: 128px 0 80px;
+      position: relative; overflow: hidden;
+    }
+    #hero::before {
+      content: '';
+      position: absolute; top: -250px; right: -180px;
+      width: 800px; height: 800px;
+      background: radial-gradient(circle, rgba(37,99,235,.2) 0%, transparent 68%);
+      pointer-events: none;
+    }
+    #hero::after {
+      content: '';
+      position: absolute; bottom: 0; left: -200px;
+      width: 600px; height: 500px;
+      background: radial-gradient(circle, rgba(37,99,235,.1) 0%, transparent 65%);
+      pointer-events: none; z-index: 0;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px; align-items: center;
+      position: relative; z-index: 1;
+    }
+
+    /* image card */
+    .hero-img-wrap {
+      border-radius: 22px; overflow: hidden;
+      position: relative;
+    }
+    .hero-img-wrap::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: 45%;
+      background: linear-gradient(to top, rgba(37,99,235,.28), transparent);
+      pointer-events: none;
+    }
+    .hero-img-wrap img {
+      width: 100%; height: 520px;
+      object-fit: cover; object-position: center top;
+      border-radius: 22px;
+    }
+
+    /* content */
+    .hero-badge { margin-bottom: 28px; }
+    .hero-title {
+      font-size: clamp(38px, 5vw, 66px);
+      font-weight: 900; line-height: 1.04;
+      letter-spacing: -.03em; margin-bottom: 20px;
+    }
+    .hero-title .muted { color: var(--g3); display: block; }
+    .hero-desc {
+      font-size: 16px; color: var(--g2);
+      line-height: 1.72; max-width: 400px;
+      margin-bottom: 32px;
+    }
+    .hero-checks { list-style: none; margin-bottom: 40px; display: flex; flex-direction: column; gap: 13px; }
+    .hero-checks li {
+      display: flex; align-items: center; gap: 12px;
+      font-size: 15px; font-weight: 500; color: var(--g1);
+    }
+    .check-ic {
+      width: 22px; height: 22px; flex-shrink: 0;
+      background: var(--accent); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .check-ic svg { width: 11px; height: 11px; }
+    .hero-cta { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .hero-rating { display: flex; align-items: center; gap: 10px; }
+    .stars { display: flex; gap: 2px; }
+    .stars svg { width: 15px; height: 15px; fill: #fbbf24; }
+    .rating-info { font-size: 13px; color: var(--g2); }
+    .rating-info strong { color: var(--white); font-weight: 700; }
+
+    /* ============================================================
+       SERVICES
+    ============================================================ */
+    #services { padding: 120px 0; position: relative; }
+    #services::before {
+      content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      width: 900px; height: 600px;
+      background: radial-gradient(ellipse, rgba(37,99,235,.07) 0%, transparent 65%);
+      pointer-events: none; z-index: 0;
+    }
+    #services .sec-header, #services .services-grid { position: relative; z-index: 1; }
+    .sec-header { text-align: center; margin-bottom: 60px; }
+    .sec-header .badge { margin-bottom: 20px; }
+    .sec-header p { color: var(--g2); font-size: 16px; max-width: 480px; margin: 14px auto 0; }
+
+    .services-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 18px;
+    }
+    .srv-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 18px; padding: 32px;
+      transition: all .3s ease; position: relative; overflow: hidden;
+    }
+    .srv-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(37,99,235,.55), transparent);
+      opacity: 0; transition: opacity .3s;
+    }
+    .srv-card:hover { border-color: rgba(37,99,235,.28); transform: translateY(-5px); box-shadow: 0 24px 64px rgba(0,0,0,.45); }
+    .srv-card:hover::before { opacity: 1; }
+
+    .srv-icon {
+      width: 52px; height: 52px; border-radius: 13px;
+      background: rgba(37,99,235,.1); border: 1px solid rgba(37,99,235,.2);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 22px;
+    }
+    .srv-icon svg { width: 22px; height: 22px; stroke: var(--accent-2); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+    .srv-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+    .srv-card p { font-size: 14px; color: var(--g2); line-height: 1.65; }
+    .srv-tag {
+      display: inline-block; margin-top: 18px;
+      padding: 4px 12px; background: rgba(37,99,235,.1);
+      border: 1px solid rgba(37,99,235,.2); border-radius: 100px;
+      font-size: 11px; font-weight: 600; color: var(--accent-2);
+    }
+
+    /* ============================================================
+       STATS
+    ============================================================ */
+    #stats { padding: 60px 0; }
+    .stats-box {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 24px; padding: 60px 48px;
+      display: grid; grid-template-columns: 1fr 1px 1fr 1px 1fr 1px 1fr;
+      align-items: center; position: relative; overflow: hidden;
+    }
+    .stats-box::after {
+      content: '';
+      position: absolute; top: -80px; left: 50%; transform: translateX(-50%);
+      width: 500px; height: 200px;
+      background: radial-gradient(circle, rgba(37,99,235,.09) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .stat-sep { width: 1px; height: 56px; background: var(--border-2); }
+    .stat-item { text-align: center; padding: 20px 24px; }
+    .stat-num {
+      font-size: clamp(44px, 5vw, 62px);
+      font-weight: 900; line-height: 1;
+      letter-spacing: -.03em; margin-bottom: 8px; color: var(--white);
+    }
+    .stat-num .acc { color: var(--accent-2); }
+    .stat-lbl { font-size: 13px; color: var(--g2); font-weight: 500; }
+
+    /* ============================================================
+       PROCESS
+    ============================================================ */
+    #process { padding: 120px 0; }
+    .process-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: stretch;
+    }
+    .process-content .badge { margin-bottom: 22px; }
+    .process-content h2 {
+      font-size: clamp(34px, 4vw, 54px); font-weight: 900;
+      line-height: 1.08; letter-spacing: -.03em; margin-bottom: 16px;
+    }
+    .process-content h2 span { color: var(--g3); }
+    .process-content > p { font-size: 15px; color: var(--g2); line-height: 1.72; max-width: 400px; margin-bottom: 36px; }
+
+    .steps { display: flex; flex-direction: column; gap: 10px; }
+    .step {
+      display: flex; align-items: center; gap: 16px;
+      padding: 18px 22px; border-radius: 14px;
+      background: var(--bg-card); border: 1px solid var(--border);
+      cursor: pointer; transition: all .25s ease;
+    }
+    .step:hover, .step.active { border-color: rgba(37,99,235,.3); background: rgba(37,99,235,.05); }
+    .step-n {
+      width: 40px; height: 40px; flex-shrink: 0;
+      border-radius: 10px; font-size: 13px; font-weight: 700;
+      background: rgba(37,99,235,.1); border: 1px solid rgba(37,99,235,.2);
+      color: var(--accent-2); display: flex; align-items: center; justify-content: center;
+      transition: all .25s;
+    }
+    .step.active .step-n { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .step-info h4 { font-size: 15px; font-weight: 700; margin-bottom: 3px; }
+    .step-info p  { font-size: 13px; color: var(--g2); }
+
+    /* visual side */
+    .process-visual { position: relative; display: flex; align-items: center; }
+    .process-img-wrap { border-radius: 22px; overflow: hidden; position: relative; width: 100%; }
+    .process-img-wrap img { width: 100%; height: 480px; object-fit: cover; }
+    .process-img-wrap::before {
+      content: ''; position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(145deg, rgba(37,99,235,.14) 0%, transparent 55%);
+    }
+    .process-float {
+      position: absolute; bottom: 22px; left: 22px; right: 22px; z-index: 2;
+      background: rgba(8,8,15,.92); backdrop-filter: blur(24px);
+      border: 1px solid rgba(37,99,235,.3); border-radius: 16px; padding: 20px 22px;
+      box-shadow: 0 0 40px rgba(37,99,235,.15);
+    }
+    .pf-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+    .pf-icon {
+      width: 40px; height: 40px; background: var(--accent);
+      border-radius: 11px; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 16px rgba(37,99,235,.4);
+    }
+    .pf-icon svg { width: 18px; height: 18px; fill: white; }
+    .stage-tag {
+      padding: 5px 14px; background: rgba(37,99,235,.15);
+      border: 1px solid rgba(37,99,235,.3); border-radius: 100px;
+      font-size: 11px; font-weight: 700; color: var(--accent-2); letter-spacing: .04em;
+    }
+    .process-float h4 { font-size: 16px; font-weight: 800; margin-bottom: 6px; color: var(--white); }
+    .process-float p  { font-size: 13px; color: var(--g2); line-height: 1.55; }
+    .pf-checklist { list-style: none; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 6px; }
+    .pf-checklist li { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--g2); }
+    .pf-checklist li::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--accent-2); flex-shrink: 0; }
+    /* float card fade transition */
+    .float-content { transition: opacity .3s ease, transform .3s ease; }
+    .float-content.fade-out { opacity: 0; transform: translateY(6px); }
+    .float-content.fade-in  { opacity: 1; transform: translateY(0); }
+
+    /* ============================================================
+       PORTFOLIO / RESULTS
+    ============================================================ */
+    #portfolio { padding: 120px 0; text-align: center; position: relative; }
+    #portfolio::before {
+      content: ''; position: absolute; top: 0; left: -200px;
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(37,99,235,.09) 0%, transparent 65%);
+      pointer-events: none; z-index: 0;
+    }
+    #portfolio .portfolio-header, #portfolio .portfolio-grid { position: relative; z-index: 1; }
+    .portfolio-header .badge { margin-bottom: 22px; }
+    .portfolio-header h2 { font-size: clamp(34px, 5vw, 60px); font-weight: 900; letter-spacing: -.03em; line-height: 1.08; margin-bottom: 16px; }
+    .portfolio-header h2 span { color: var(--g3); }
+    .portfolio-header p { color: var(--g2); font-size: 16px; max-width: 500px; margin: 0 auto 36px; }
+
+    .portfolio-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 18px; margin-top: 60px; text-align: left;
+    }
+    .p-item { border-radius: 18px; overflow: hidden; position: relative; cursor: pointer; display: block; text-decoration: none; color: inherit; height: 320px; }
+    .p-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease; }
+    .p-item:hover img { transform: scale(1.06); }
+    .p-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(5,5,8,.92) 0%, rgba(5,5,8,.10) 50%, transparent 100%);
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 18px 22px 24px;
+      transition: background .35s;
+    }
+    .p-item:hover .p-overlay {
+      background: linear-gradient(to top, rgba(5,5,8,.97) 0%, rgba(5,5,8,.35) 60%, transparent 100%);
+    }
+    .p-overlay .p-tag {
+      display: inline-block; margin-bottom: 8px;
+      padding: 3px 10px; background: var(--accent);
+      border-radius: 6px; font-size: 11px; font-weight: 700; color: #fff;
+    }
+    .p-overlay h4 { font-size: 17px; font-weight: 700; margin-bottom: 6px; }
+    /* Description — pas de hauteur par défaut pour aligner le titre en bas */
+    .p-overlay p {
+      font-size: 13px; color: var(--g2);
+      max-height: 0; overflow: hidden; opacity: 0;
+      transition: max-height .35s ease, opacity .3s;
+      margin-bottom: 0;
+    }
+    .p-item:hover .p-overlay p { max-height: 60px; opacity: 1; }
+
+    /* ============================================================
+       TESTIMONIALS
+    ============================================================ */
+    #testimonials { padding: 120px 0; position: relative; }
+    #testimonials::before {
+      content: ''; position: absolute; top: 0; right: -150px;
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(37,99,235,.1) 0%, transparent 65%);
+      pointer-events: none; z-index: 0;
+    }
+    #testimonials .sec-header, #testimonials .testi-grid { position: relative; z-index: 1; }
+    .testi-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 18px; margin-top: 60px;
+    }
+    .testi-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 20px; padding: 30px;
+      transition: all .3s ease;
+    }
+    .testi-card:hover { border-color: rgba(37,99,235,.25); transform: translateY(-5px); box-shadow: 0 24px 60px rgba(0,0,0,.3); }
+    .t-stars { display: flex; gap: 3px; margin-bottom: 18px; }
+    .t-stars svg { width: 15px; height: 15px; fill: #fbbf24; }
+    .t-quote { font-size: 40px; color: var(--accent-2); line-height: .8; font-family: Georgia, serif; margin-bottom: 6px; }
+    .t-text { font-size: 15px; color: var(--g1); line-height: 1.72; margin-bottom: 22px; }
+    .t-author {
+      display: flex; align-items: center; gap: 12px;
+      padding-top: 18px; border-top: 1px solid var(--border);
+    }
+    .t-avatar {
+      width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 15px; color: #fff;
+    }
+    .t-info h5 { font-size: 15px; font-weight: 700; margin-bottom: 2px; }
+    .t-info span { font-size: 12px; color: var(--g2); }
+
+    /* ============================================================
+       CONTACT
+    ============================================================ */
+    #contact { padding: 120px 0; position: relative; }
+    #contact::before {
+      content: ''; position: absolute;
+      top: 50%; left: 50%; transform: translate(-50%, -50%);
+      width: 900px; height: 700px;
+      background: radial-gradient(ellipse, rgba(37,99,235,.1) 0%, transparent 65%);
+      pointer-events: none; z-index: 0;
+    }
+    #contact .contact-grid { position: relative; z-index: 1; }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1.4fr;
+      gap: 80px; align-items: start;
+    }
+    .c-info .c-label {
+      font-size: 12px; font-weight: 700; color: var(--accent-2);
+      letter-spacing: .1em; text-transform: uppercase; margin-bottom: 14px;
+    }
+    .c-info h2 {
+      font-size: clamp(34px, 4vw, 52px); font-weight: 900;
+      line-height: 1.06; letter-spacing: -.03em; margin-bottom: 16px;
+    }
+    .c-info > p { font-size: 15px; color: var(--g2); line-height: 1.72; max-width: 320px; margin-bottom: 36px; }
+
+    .c-cards { display: flex; flex-direction: column; gap: 12px; }
+    .c-card {
+      display: flex; align-items: center; gap: 14px;
+      padding: 18px 20px; background: var(--bg-card);
+      border: 1px solid var(--border); border-radius: 14px;
+      text-decoration: none; transition: all .2s;
+    }
+    .c-card:hover { border-color: rgba(37,99,235,.3); background: rgba(37,99,235,.05); }
+    .c-card-ic {
+      width: 44px; height: 44px; flex-shrink: 0;
+      background: rgba(37,99,235,.1); border: 1px solid rgba(37,99,235,.18);
+      border-radius: 12px; display: flex; align-items: center; justify-content: center;
+    }
+    .c-card-ic svg { width: 18px; height: 18px; stroke: var(--accent-2); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    .c-card-text h4 { font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 2px; }
+    .c-card-text span { font-size: 13px; color: var(--g2); }
+
+    /* form */
+    .contact-form {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 22px; padding: 40px;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label {
+      display: block; font-size: 11px; font-weight: 700;
+      color: var(--g2); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 8px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%; background: rgba(255,255,255,.03);
+      border: 1px solid var(--border-2); border-radius: 10px;
+      padding: 12px 16px; color: var(--white);
+      font-size: 14px; font-family: 'Inter', sans-serif;
+      outline: none; transition: border-color .2s, box-shadow .2s;
+      appearance: none;
+    }
+    /* Custom select */
+    .custom-select { position: relative; }
+    .custom-select-trigger {
+      width: 100%; background: rgba(255,255,255,.03);
+      border: 1px solid var(--border-2); border-radius: 10px;
+      padding: 12px 40px 12px 16px; color: var(--g3);
+      font-size: 14px; font-family: 'Inter', sans-serif;
+      cursor: pointer; display: flex; align-items: center;
+      justify-content: space-between;
+      transition: border-color .2s, box-shadow .2s, color .2s;
+      user-select: none; outline: none;
+    }
+    .custom-select-trigger.has-value { color: var(--white); }
+    .custom-select.open .custom-select-trigger,
+    .custom-select-trigger:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37,99,235,.12);
+    }
+    .custom-select-arrow {
+      flex-shrink: 0; transition: transform .25s ease;
+      color: var(--g3);
+    }
+    .custom-select.open .custom-select-arrow { transform: rotate(180deg); color: var(--accent-2); }
+    .custom-select-dropdown {
+      position: absolute; top: calc(100% + 6px); left: 0; right: 0;
+      background: var(--bg-card); border: 1px solid rgba(37,99,235,.35);
+      border-radius: 10px; overflow: hidden; z-index: 200;
+      opacity: 0; transform: translateY(-6px); pointer-events: none;
+      transition: opacity .2s ease, transform .2s ease;
+      box-shadow: 0 12px 32px rgba(0,0,0,.5);
+    }
+    .custom-select.open .custom-select-dropdown {
+      opacity: 1; transform: translateY(0); pointer-events: all;
+    }
+    .custom-select-option {
+      padding: 11px 16px; font-size: 14px; color: var(--g1);
+      cursor: pointer; transition: background .15s, color .15s;
+      border-bottom: 1px solid var(--border);
+    }
+    .custom-select-option:last-child { border-bottom: none; }
+    .custom-select-option:hover { background: rgba(37,99,235,.12); color: var(--white); }
+    .custom-select-option.is-active {
+      background: rgba(37,99,235,.18); color: var(--accent-2); font-weight: 600;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: var(--g3); }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37,99,235,.12);
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .btn-submit {
+      width: 100%; padding: 15px;
+      background: var(--accent); color: #fff; border: none;
+      border-radius: 10px; font-size: 14px; font-weight: 800;
+      cursor: pointer; letter-spacing: .06em; text-transform: uppercase;
+      transition: all .2s ease; margin-top: 6px; font-family: 'Inter', sans-serif;
+    }
+    .btn-submit:hover { background: var(--accent-h); box-shadow: 0 10px 28px rgba(37,99,235,.4); transform: translateY(-1px); }
+    .btn-submit:disabled { opacity: .55; cursor: not-allowed; transform: none; box-shadow: none; }
+    .form-success {
+      display: none; text-align: center; padding: 48px 20px;
+    }
+    .success-ic {
+      width: 64px; height: 64px; margin: 0 auto 22px;
+      background: rgba(37,99,235,.1); border: 1px solid rgba(37,99,235,.25);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    }
+    .success-ic svg { width: 28px; height: 28px; }
+    .form-success h3 { font-size: 22px; font-weight: 800; margin-bottom: 10px; }
+    .form-success p { font-size: 15px; color: var(--g2); }
+
+    /* ============================================================
+       FAQ
+    ============================================================ */
+    #faq { padding: 120px 0; position: relative; }
+    #faq::before {
+      content: ''; position: absolute; top: 50%; right: -180px; transform: translateY(-50%);
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(37,99,235,.09) 0%, transparent 65%);
+      pointer-events: none; z-index: 0;
+    }
+    #faq .faq-grid { position: relative; z-index: 1; }
+    .faq-grid {
+      display: grid; grid-template-columns: 1fr 1.5fr;
+      gap: 80px; align-items: start;
+    }
+    .faq-left .badge { margin-bottom: 22px; }
+    .faq-left h2 {
+      font-size: clamp(34px, 4vw, 52px); font-weight: 900;
+      line-height: 1.08; letter-spacing: -.03em; margin-bottom: 18px;
+    }
+    .faq-left h2 span { color: var(--g3); }
+    .faq-left p { font-size: 15px; color: var(--g2); line-height: 1.72; max-width: 340px; margin-bottom: 28px; }
+
+    .faq-list { display: flex; flex-direction: column; gap: 10px; }
+    .faq-item {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 14px; overflow: hidden;
+      transition: border-color .2s;
+    }
+    .faq-item.open { border-color: rgba(37,99,235,.28); }
+    .faq-q {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 24px; cursor: pointer; user-select: none;
+      font-size: 15px; font-weight: 600; color: var(--white);
+      gap: 16px;
+    }
+    .faq-q svg {
+      width: 18px; height: 18px; flex-shrink: 0;
+      stroke: var(--g2); fill: none; stroke-width: 2;
+      stroke-linecap: round; transition: transform .3s;
+    }
+    .faq-item.open .faq-q svg { transform: rotate(45deg); stroke: var(--accent-2); }
+    .faq-a {
+      max-height: 0; overflow: hidden;
+      transition: max-height .4s ease, padding .3s ease;
+    }
+    .faq-a-inner { padding: 0 24px 20px; font-size: 14px; color: var(--g2); line-height: 1.72; }
+    .faq-item.open .faq-a { max-height: 200px; }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    footer { border-top: 1px solid var(--border); padding: 64px 0 30px; }
+    .footer-grid {
+      display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr;
+      gap: 40px; margin-bottom: 48px;
+    }
+    .f-brand .f-logo {
+      font-size: 22px; font-weight: 900;
+      letter-spacing: .06em; color: var(--white); display: block; margin-bottom: 14px;
+    }
+    .f-brand p { font-size: 14px; color: var(--g2); line-height: 1.65; max-width: 230px; margin-bottom: 18px; }
+    .f-address { font-size: 13px; color: var(--g3); line-height: 1.6; }
+    .f-col h4 {
+      font-size: 12px; font-weight: 700; color: var(--white);
+      text-transform: uppercase; letter-spacing: .06em; margin-bottom: 16px;
+    }
+    .f-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .f-links a { font-size: 14px; color: var(--g2); text-decoration: none; transition: color .2s; }
+    .f-links a:hover { color: var(--white); }
+
+    .social-row { display: flex; gap: 8px; }
+    .soc {
+      width: 38px; height: 38px; border-radius: 10px;
+      background: var(--bg-card); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      text-decoration: none; transition: all .2s;
+    }
+    .soc:hover { border-color: var(--accent); background: rgba(37,99,235,.1); }
+    .soc svg { width: 16px; height: 16px; fill: var(--g2); transition: fill .2s; }
+    .soc:hover svg { fill: var(--accent-2); }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border); padding-top: 22px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .footer-bottom p { font-size: 13px; color: var(--g3); }
+    .footer-bottom a { color: var(--g2); text-decoration: none; transition: color .2s; }
+    .footer-bottom a:hover { color: var(--white); }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 1024px) {
+      .hero-grid  { gap: 48px; }
+      .stats-box  { grid-template-columns: 1fr 1fr; gap: 40px; padding: 44px 36px; }
+      .stat-sep   { display: none; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .faq-grid   { grid-template-columns: 1fr; gap: 48px; }
+    }
+    @media (max-width: 768px) {
+      #nav .nav-links, #nav .nav-sep { display: none; }
+      #nav .nav-cta.menu-open { display: none; }
+      .hamburger { display: flex; }
+      /* CTA centré sur mobile uniquement */
+      .nav-right { flex: 1; justify-content: flex-end; }
+      /* Hero centering */
+      .hero-grid  { grid-template-columns: 1fr; gap: 40px; }
+      .hero-img-wrap { order: -1; }
+      .hero-img-wrap img { height: 300px; }
+      .hero-content { text-align: center; }
+      .hero-checks { align-items: flex-start; width: fit-content; max-width: 100%; margin: 0 auto; }
+      .hero-checks li { font-size: 13px; text-align: left; align-items: flex-start; width: 100%; }
+      .hero-cta { justify-content: center; margin-top: 16px; }
+      .hero-rating { justify-content: center; }
+      /* Services */
+      .services-grid  { grid-template-columns: 1fr; }
+      .stats-box      { grid-template-columns: 1fr 1fr; padding: 36px 28px; gap: 30px; }
+      /* Process centering */
+      .process-grid   { grid-template-columns: 1fr; gap: 48px; }
+      .process-content { text-align: center; }
+      .process-content > p { max-width: 100%; }
+      .steps { text-align: left; }
+      /* Portfolio, testimonials */
+      .portfolio-grid { grid-template-columns: 1fr; }
+      .testi-grid     { grid-template-columns: 1fr; }
+      /* Contact centering */
+      .contact-grid   { grid-template-columns: 1fr; gap: 48px; }
+      .contact-form   { padding: 24px; }
+      .form-row       { grid-template-columns: 1fr; }
+      .c-info         { text-align: center; }
+      .c-card, .c-card-text { text-align: left; }
+      .c-info > p     { max-width: 100%; }
+      /* FAQ centering */
+      .faq-left       { text-align: center; }
+      .faq-left p     { max-width: 100%; }
+      /* Footer — 2 colonnes */
+      .footer-grid    { grid-template-columns: 1fr 1fr; }
+      .footer-bottom  { flex-direction: column; gap: 10px; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .stats-box { grid-template-columns: 1fr; }
+    }
+  /* ============================================================
+     CUSTOM CURSOR
+  ============================================================ */
+  @media (pointer: fine) {
+    * { cursor: none !important; }
+    #cursor {
+      position: fixed; z-index: 99999;
+      width: 14px; height: 14px;
+      background: rgba(10,10,20,.75);
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 8px 2px rgba(37,99,235,.45);
+      transition: transform .08s ease, opacity .2s ease;
+      will-change: left, top;
+    }
+    #cursor.cursor-hover {
+      transform: translate(-50%, -50%) scale(2.2);
+      background: rgba(37,99,235,.5);
+    }
+  }
+
+  /* ============================================================
+     INTRO OVERLAY
+  ============================================================ */
+  body.intro-active { overflow: hidden; }
+
+  #intro-overlay {
+    position: fixed; inset: 0; z-index: 9999; pointer-events: all;
+    background: var(--bg);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 16px;
+    transition: opacity .45s ease, transform .45s ease;
+  }
+  #intro-overlay.intro-out {
+    opacity: 0; transform: scale(1.04);
+    pointer-events: none;
+  }
+  #intro-scanner {
+    position: absolute; top: -3px; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, transparent, rgba(37,99,235,.4) 25%, var(--accent) 50%, var(--accent-2) 65%, transparent);
+    box-shadow: 0 0 18px 8px rgba(37,99,235,.55), 0 0 50px 15px rgba(37,99,235,.18);
+    opacity: 0;
+    animation: introScan .6s ease-out .05s forwards;
+  }
+  @keyframes introScan {
+    0%   { top: -3px; opacity: 1; }
+    92%  { opacity: 1; }
+    100% { top: 100%; opacity: 0; }
+  }
+  #intro-logo {
+    height: 88px; width: auto;
+    clip-path: inset(0 0 100% 0);
+    animation: introReveal .6s linear .05s forwards;
+  }
+  @keyframes introReveal { to { clip-path: inset(0 0 0% 0); } }
+
+  #intro-tagline {
+    font-size: 10px; letter-spacing: .28em; text-transform: uppercase;
+    color: var(--g3); font-weight: 500; margin: 0;
+    opacity: 0;
+    animation: introFadeIn .25s ease .65s forwards;
+  }
+  @keyframes introFadeIn { to { opacity: 1; } }
+  </style>
+</head>
+<body class="intro-active">
+
+<div id="cursor"></div>
+
+<!-- ============================================================
+     INTRO OVERLAY
+============================================================ -->
+<div id="intro-overlay">
+  <div id="intro-scanner"></div>
+  <img id="intro-logo" src="img/Logo_transparent_loyb.png" alt="Loyb">
+  <p id="intro-tagline">Création de site web &nbsp;·&nbsp; Référencement Naturel &nbsp;·&nbsp; Rouen</p>
+</div>
+
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
+<nav id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <a href="#hero" class="nav-logo">
+          <img src="img/Logo_transparent_loyb.png" alt="Loyb — Création de site web et référencement naturel à Rouen">
+        </a>
+        <div class="nav-sep"></div>
+        <ul class="nav-links">
+          <li><a href="#hero">Accueil</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <a href="#contact" class="btn btn-primary nav-cta" style="font-size:13px;padding:11px 22px;">Prendre contact</a>
+      <div class="nav-right">
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="mobile-links">
+    <li><a href="#hero"         onclick="closeMenu()">Accueil</a></li>
+    <li><a href="#services"     onclick="closeMenu()">Services</a></li>
+    <li><a href="#process"      onclick="closeMenu()">Méthode</a></li>
+    <li><a href="#portfolio"    onclick="closeMenu()">Portfolio</a></li>
+    <li><a href="#testimonials" onclick="closeMenu()">Avis clients</a></li>
+    <li><a href="#contact"      onclick="closeMenu()">Contact</a></li>
+    <li><a href="#faq"          onclick="closeMenu()">FAQ</a></li>
+  </ul>
+  <a href="#contact" class="btn btn-primary" onclick="closeMenu()" style="margin-top:32px;justify-content:center;">Prendre contact</a>
+</div>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-grid">
+
+      <!-- Image -->
+      <div class="hero-img-wrap fade-up">
+        <img src="img/Design sans titre (1).png" alt="Agence création de site internet et référencement naturel à Rouen — Loyb">
+      </div>
+
+      <!-- Contenu -->
+      <div class="hero-content">
+        <div class="badge hero-badge fade-up">À propos de Loyb</div>
+        <h1 class="hero-title fade-up d1">
+          Création de site internet &amp; Référencement Naturel à Rouen.
+        </h1>
+        <p class="hero-desc fade-up d1">
+          Agence création de site internet et référencement naturel à Rouen et en Normandie.
+          Je transforme votre présence en ligne en un véritable levier de croissance pour votre entreprise.
+        </p>
+        <ul class="hero-checks fade-up d2">
+          <li>
+            <span class="check-ic">
+              <svg viewBox="0 0 12 12" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="2,6.5 5,9.5 10,3"/>
+              </svg>
+            </span>
+            Sites web conçus pour convertir
+          </li>
+          <li>
+            <span class="check-ic">
+              <svg viewBox="0 0 12 12" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="2,6.5 5,9.5 10,3"/>
+              </svg>
+            </span>
+            Référencement Google durable et efficace
+          </li>
+          <li>
+            <span class="check-ic">
+              <svg viewBox="0 0 12 12" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="2,6.5 5,9.5 10,3"/>
+              </svg>
+            </span>
+            Résultats mesurables dès les premiers mois
+          </li>
+        </ul>
+        <div class="hero-cta fade-up d3">
+          <a href="#contact" class="btn btn-primary">Démarrer un projet</a>
+          <div class="hero-rating">
+            <div class="stars">
+              <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+              <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+              <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+              <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+              <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+            </div>
+            <div class="rating-info"><strong>40+</strong> projets réalisés</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES
+============================================================ -->
+<section id="services">
+  <div class="container">
+    <div class="sec-header">
+      <div class="badge fade-up">Mes services</div>
+      <h2 class="section-title fade-up d1">
+        Tout ce qu'il faut pour<br>
+        <span class="muted">réussir en ligne.</span>
+      </h2>
+      <p class="fade-up d2">
+        Des solutions sur mesure pour les entreprises de Rouen et de Normandie — création de site internet, référencement naturel et community management.
+      </p>
+    </div>
+    <div class="services-grid">
+      <div class="srv-card fade-up">
+        <div class="srv-icon">
+          <svg viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18M9 21V9"/>
+          </svg>
+        </div>
+        <h3>Création de site internet à Rouen</h3>
+        <p>Sites vitrines, portfolios et landing pages au design premium pour les entreprises de Rouen et ses alentours. Chaque interface est pensée pour inspirer confiance et générer des conversions.</p>
+        <span class="srv-tag">Design & Développement</span>
+      </div>
+      <div class="srv-card fade-up d1">
+        <div class="srv-icon">
+          <svg viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </div>
+        <h3>Référencement naturel à Rouen</h3>
+        <p>Stratégie SEO complète pour que votre entreprise apparaisse en première page de Google à Rouen et en Normandie. Audit technique, optimisation du contenu et acquisition de liens qualifiés.</p>
+        <span class="srv-tag">SEO & Visibilité</span>
+      </div>
+      <div class="srv-card fade-up d2">
+        <div class="srv-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M23 7l-7 5 7 5V7z"/>
+            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+          </svg>
+        </div>
+        <h3>Community Management</h3>
+        <p>Création de contenus photo et vidéo percutants, gestion de vos réseaux sociaux et production de visuels sur mesure pour renforcer l'image de votre marque.</p>
+        <span class="srv-tag">Photo · Vidéo · Réseaux sociaux</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS
+============================================================ -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-box">
+      <div class="stat-item fade-up">
+        <div class="stat-num"><span class="counter" data-target="5">0</span><span class="acc"> ans</span></div>
+        <div class="stat-lbl">d'expérience professionnelle</div>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item fade-up d1">
+        <div class="stat-num"><span class="acc">+</span><span class="counter" data-target="40">0</span></div>
+        <div class="stat-lbl">projets réalisés avec succès</div>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item fade-up d2">
+        <div class="stat-num"><span class="counter" data-target="100">0</span><span class="acc">%</span></div>
+        <div class="stat-lbl">taux de satisfaction client</div>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item fade-up d3">
+        <div class="stat-num"><span class="acc">×</span><span class="counter" data-target="3">0</span></div>
+        <div class="stat-lbl">retour sur investissement moyen</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROCESS
+============================================================ -->
+<section id="process">
+  <div class="container">
+    <div class="process-grid">
+
+      <!-- Étapes -->
+      <div class="process-content">
+        <div class="badge fade-up">Ma méthode</div>
+        <h2 class="fade-up d1">
+          Du concept<br>
+          <span>au lancement.</span>
+        </h2>
+        <p class="fade-up d1">
+          Un processus clair et transparent pour transformer votre vision en réalité digitale, étape par étape, sans mauvaise surprise.
+        </p>
+        <div class="steps fade-up d2">
+          <div class="step active" data-stage="0">
+            <div class="step-n">01</div>
+            <div class="step-info">
+              <h4>Découverte</h4>
+              <p>Analyse de vos besoins, objectifs et concurrents</p>
+            </div>
+          </div>
+          <div class="step" data-stage="1">
+            <div class="step-n">02</div>
+            <div class="step-info">
+              <h4>Conception</h4>
+              <p>Maquettes, wireframes et validation du design</p>
+            </div>
+          </div>
+          <div class="step" data-stage="2">
+            <div class="step-n">03</div>
+            <div class="step-info">
+              <h4>Développement</h4>
+              <p>Intégration technique et optimisation SEO</p>
+            </div>
+          </div>
+          <div class="step" data-stage="3">
+            <div class="step-n">04</div>
+            <div class="step-info">
+              <h4>Lancement</h4>
+              <p>Mise en ligne, tests et suivi des performances</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visuel -->
+      <div class="process-visual fade-up d2">
+        <div class="process-img-wrap">
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&auto=format&fit=crop&q=80"
+               alt="Méthode de travail Loyb — Agence création de site web et SEO à Rouen">
+          <div class="process-float">
+            <div class="float-content" id="floatContent">
+              <div class="pf-head">
+                <div class="pf-icon">
+                  <svg viewBox="0 0 24 24" id="stageIcon">
+                    <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                  </svg>
+                </div>
+                <span class="stage-tag" id="stageLabel">Étape 1</span>
+              </div>
+              <h4 id="stageTitle">Appel découverte gratuit</h4>
+              <p id="stageDesc">On échange sur vos objectifs, votre cible et vos contraintes pour construire une stratégie adaptée à votre activité.</p>
+              <ul class="pf-checklist" id="stageChecklist">
+                <li>Analyse de vos besoins et de votre marché</li>
+                <li>Étude de la concurrence et positionnement</li>
+                <li>Définition des objectifs mesurables</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PORTFOLIO
+============================================================ -->
+<section id="portfolio">
+  <div class="container">
+    <div class="portfolio-header">
+      <div class="badge fade-up">Portfolio</div>
+      <h2 class="fade-up d1">
+        Des résultats concrets<br>
+        <span>qui propulsent votre succès.</span>
+      </h2>
+      <p class="fade-up d2">
+        Chaque projet est une opportunité de créer quelque chose d'unique, de performant et de durable pour votre activité.
+      </p>
+      <a href="#contact" class="btn btn-primary fade-up d3">Démarrer votre projet</a>
+    </div>
+    <div class="portfolio-grid">
+      <div class="p-item fade-up">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=80"
+             alt="Référencement naturel Rouen — statistiques de trafic organique">
+        <div class="p-overlay">
+          <span class="p-tag">Référencement naturel</span>
+          <h4>Visibilité Google boostée</h4>
+          <p>+180 % de trafic organique en 6 mois</p>
+        </div>
+      </div>
+      <a class="p-item fade-up d1" href="https://www.leclatdesoi.fr/" target="_blank" rel="noopener">
+        <img src="img/capture_site_leclat_de_soi.jpeg"
+             alt="Création de site vitrine Rouen — Salon bien-être L'éclat de soi">
+        <div class="p-overlay">
+          <span class="p-tag">Site vitrine</span>
+          <h4>Salon bien être</h4>
+          <p>Top 3 Google sur les mots-clés cibles</p>
+        </div>
+      </a>
+      <a class="p-item fade-up d2" href="https://www.facebook.com/profile.php?id=61574748990851" target="_blank" rel="noopener">
+        <img src="img/Maxence_photo_film.jpeg"
+             alt="Création de contenu vidéo Rouen — Community management L'éclat de soi">
+        <div class="p-overlay">
+          <span class="p-tag">Création de vidéo</span>
+          <h4>L'éclat de soi</h4>
+          <p>Des milliers d'abonnés en 3 mois</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+============================================================ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="sec-header">
+      <div class="badge fade-up">Avis clients</div>
+      <h2 class="section-title fade-up d1">
+        Ce que disent<br>
+        <span class="muted">mes clients.</span>
+      </h2>
+    </div>
+    <div class="testi-grid">
+
+      <div class="testi-card fade-up">
+        <div class="t-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+        </div>
+        <div class="t-quote">"</div>
+        <p class="t-text">
+          Loyb a complètement transformé notre présence en ligne. Le site est magnifique et génère désormais de véritables demandes clients chaque semaine. Un investissement rentabilisé dès le premier mois.
+        </p>
+        <div class="t-author">
+          <div class="t-avatar" style="background: linear-gradient(135deg, #2563EB, #7C3AED);">MD</div>
+          <div class="t-info">
+            <h5>Marie Dupont</h5>
+            <span>Création de site e-commerce • ★★★★★</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card fade-up d1">
+        <div class="t-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+        </div>
+        <div class="t-quote">"</div>
+        <p class="t-text">
+          En seulement 3 mois de travail SEO, notre site est passé de la 4e page à la première position sur nos mots-clés principaux. Le trafic a explosé et nos appels entrants ont doublé. Résultat bluffant.
+        </p>
+        <div class="t-author">
+          <div class="t-avatar" style="background: linear-gradient(135deg, #059669, #10B981);">TM</div>
+          <div class="t-info">
+            <h5>Thomas Martin</h5>
+            <span>Référencement naturel SEO • ★★★★★</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card fade-up d2">
+        <div class="t-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 6.8H19l-5.5 4 2.1 6.7L10 14.4l-5.6 4.1 2.1-6.7L1 7.8h6.6z"/></svg>
+        </div>
+        <div class="t-quote">"</div>
+        <p class="t-text">
+          Travail soigné, communication exemplaire et résultats au rendez-vous. La refonte de notre site vitrine a immédiatement impacté notre image de marque. Nos clients nous complimentent régulièrement.
+        </p>
+        <div class="t-author">
+          <div class="t-avatar" style="background: linear-gradient(135deg, #7C3AED, #A855F7);">SL</div>
+          <div class="t-info">
+            <h5>Sophie Laurent</h5>
+            <span>Refonte de site vitrine • ★★★★★</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+============================================================ -->
+<section id="contact">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:48px;">
+      <div class="badge fade-up" style="display:inline-flex;">Contact</div>
+    </div>
+    <div class="contact-grid">
+
+      <!-- Info -->
+      <div class="c-info">
+        <h2 class="fade-up d1">Parlons de<br>votre projet.</h2>
+        <p class="fade-up d1">
+          Pas de délais, pas de réponses vagues. Je réponds sous 24 heures pour organiser un appel découverte personnalisé et gratuit.
+        </p>
+        <div class="c-cards fade-up d2">
+          <a href="mailto:pro.menardmaxence@gmail.com" class="c-card">
+            <div class="c-card-ic">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div class="c-card-text">
+              <h4>E-mail</h4>
+              <span>pro.menardmaxence@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:+33603418915" class="c-card">
+            <div class="c-card-ic">
+              <svg viewBox="0 0 24 24">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.07a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+            </div>
+            <div class="c-card-text">
+              <h4>Téléphone</h4>
+              <span>06 03 41 89 15</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Formulaire -->
+      <div class="contact-form fade-up d2">
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Nom</label>
+              <input type="text" id="fname" name="name" placeholder="Votre nom *" required>
+            </div>
+            <div class="form-group">
+              <label for="femail">E-mail</label>
+              <input type="email" id="femail" name="email" placeholder="Votre e-mail *" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fphone">Téléphone</label>
+            <input type="tel" id="fphone" name="phone" placeholder="Votre téléphone">
+          </div>
+          <div class="form-group">
+            <label for="ftype">Type de projet</label>
+            <input type="hidden" id="ftype" name="project_type" required>
+            <div class="custom-select" id="customSelect" tabindex="0">
+              <div class="custom-select-trigger" id="customSelectTrigger">
+                <span id="customSelectLabel">Sélectionner un service *</span>
+                <svg class="custom-select-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="1,1.5 6,6.5 11,1.5"/>
+                </svg>
+              </div>
+              <div class="custom-select-dropdown" id="customSelectDropdown">
+                <div class="custom-select-option" data-value="seo">Référencement naturel (SEO)</div>
+                <div class="custom-select-option" data-value="website">Création de site web</div>
+                <div class="custom-select-option" data-value="both">Référencement naturel &amp; Création de site web</div>
+                <div class="custom-select-option" data-value="other">Autre demande</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" name="message" placeholder="Décrivez votre projet *" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">Envoyer la demande</button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div class="success-ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <h3>Demande envoyée !</h3>
+          <p>Merci, votre demande a bien été envoyée. Nous vous recontactons dans moins de 24h.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+============================================================ -->
+<section id="faq">
+  <div class="container">
+    <div class="faq-grid">
+      <div class="faq-left">
+        <div class="badge fade-up">FAQ</div>
+        <h2 class="fade-up d1">
+          Questions<br><span>fréquentes.</span>
+        </h2>
+        <p class="fade-up d1">
+          Vous avez d'autres questions ? N'hésitez pas à me contacter directement par e-mail ou téléphone.
+        </p>
+        <a href="#contact" class="btn btn-outline fade-up d2">Me contacter</a>
+      </div>
+      <div class="faq-list fade-up d1">
+        <div class="faq-item open">
+          <div class="faq-q">
+            Quel est votre délai de réalisation ?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+          <div class="faq-a">
+            <p class="faq-a-inner">Un site vitrine est livré en 2 à 4 semaines. Un projet plus complexe (e-commerce, application) prend entre 4 et 8 semaines selon les fonctionnalités. Les délais sont définis ensemble dès le départ et toujours respectés.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            Proposez-vous un suivi après la mise en ligne ?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+          <div class="faq-a">
+            <p class="faq-a-inner">Oui, chaque projet inclut une période de garantie de 30 jours après la mise en ligne. Je propose également des contrats de maintenance mensuelle et un suivi SEO pour assurer la croissance de votre site sur le long terme.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            Comment fonctionne le référencement naturel ?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+          <div class="faq-a">
+            <p class="faq-a-inner">Le SEO optimise votre site pour que Google le juge pertinent sur vos requêtes cibles. Cela passe par l'audit technique, l'optimisation du contenu, la vitesse de chargement et l'acquisition de liens. Les premiers résultats apparaissent généralement entre 2 et 4 mois.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            Travaillez-vous avec des clients à distance ?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+          <div class="faq-a">
+            <p class="faq-a-inner">Absolument. Basé à Rouen, j'interviens dans toute la Seine-Maritime et la Normandie — Elbeuf, Sotteville, Mont-Saint-Aignan, Le Havre, Caen et au-delà. Je travaille aussi avec des clients partout en France par visioconférence, e-mail ou messagerie. La distance n'est jamais un obstacle à la qualité du travail livré.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            Quel budget prévoir pour une prestation ?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+          <div class="faq-a">
+            <p class="faq-a-inner">Chaque projet est unique, les tarifs sont donc personnalisés. Un site vitrine débute à partir de 800 €, une stratégie SEO à partir de 300 €/mois. Un devis détaillé vous est remis gratuitement après notre premier échange.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="f-brand">
+        <span class="f-logo">LOYB</span>
+        <p>Agence création de site internet et référencement naturel à Rouen. Votre visibilité en Normandie commence ici.</p>
+        <div class="f-address">
+          Rouen, 76000<br>
+          Seine-Maritime, Normandie<br>
+          Elbeuf · Sotteville · Mont-Saint-Aignan
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>Navigation</h4>
+        <ul class="f-links">
+          <li><a href="#hero">Accueil</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Méthode</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Avis clients</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Services</h4>
+        <ul class="f-links">
+          <li><a href="#services">Création de site web</a></li>
+          <li><a href="#services">Référencement naturel</a></li>
+          <li><a href="#services">Community manager</a></li>
+          <li><a href="#contact">Devis gratuit</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Réseaux sociaux</h4>
+        <div class="social-row">
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/profile.php?id=61574748990851" class="soc" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="#" class="soc" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.7.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.7 21.3.27 16.95.07 15.67.01 15.26 0 12 0zm0 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85 0 3.2-.01 3.58-.07 4.85-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07-3.2 0-3.58-.01-4.85-.07-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12c0-3.2.01-3.58.07-4.85.15-3.23 1.67-4.77 4.92-4.92C8.42 2.17 8.8 2.16 12 2.16zm0 3.68a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zm0 10.16a4 4 0 110-8 4 4 0 010 8zm6.4-11.85a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/>
+            </svg>
+          </a>
+        </div>
+        <div style="margin-top: 28px;">
+          <img src="img/Logo_transparent_loyb.png" alt="Loyb — Agence web et SEO à Rouen" style="height: 145px; width: auto; display: block;">
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Loyb. Tous droits réservés.</p>
+      <p>
+        <a href="#">Mentions légales</a>
+        &nbsp;·&nbsp;
+        <a href="#">Politique de confidentialité</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     JAVASCRIPT
+============================================================ -->
+<script>
+  /* ---------- Navbar scroll ---------- */
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+
+  /* ---------- Mobile menu ---------- */
+  const burger    = document.getElementById('hamburger');
+  const mobileM   = document.getElementById('mobileMenu');
+  const navCta    = document.querySelector('#nav .nav-cta');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    mobileM.classList.toggle('open');
+    if (navCta) navCta.classList.toggle('menu-open');
+  });
+  function closeMenu() {
+    burger.classList.remove('open');
+    mobileM.classList.remove('open');
+    if (navCta) navCta.classList.remove('menu-open');
+  }
+
+  /* ---------- Scroll animations ---------- */
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+
+  /* ---------- Counter animation ---------- */
+  const counterObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el     = e.target;
+      const target = parseInt(el.dataset.target);
+      const dur    = 1600;
+      const start  = performance.now();
+      const tick   = (now) => {
+        const p = Math.min((now - start) / dur, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.floor(eased * target);
+        if (p < 1) requestAnimationFrame(tick);
+        else el.textContent = target;
+      };
+      requestAnimationFrame(tick);
+      counterObs.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.counter').forEach(el => counterObs.observe(el));
+
+  /* ---------- Process steps ---------- */
+  const stageData = [
+    {
+      label: 'Étape 1',
+      title: 'Appel découverte gratuit',
+      desc:  'On échange sur vos objectifs, votre cible et vos contraintes pour construire une stratégie adaptée à votre activité.',
+      checks: ['Analyse de vos besoins et de votre marché', 'Étude de la concurrence et positionnement', 'Définition des objectifs mesurables'],
+    },
+    {
+      label: 'Étape 2',
+      title: 'Conception & maquettage',
+      desc:  'Je crée les maquettes visuelles de votre projet (wireframes, design final) et les soumet à votre validation avant tout développement.',
+      checks: ['Wireframes et architecture de l\'information', 'Design haute fidélité sous votre identité', 'Ajustements jusqu\'à validation complète'],
+    },
+    {
+      label: 'Étape 3',
+      title: 'Développement & optimisation SEO',
+      desc:  'Intégration technique du design, développement des fonctionnalités et optimisation SEO on-page pour un site rapide et bien référencé.',
+      checks: ['Développement responsive mobile-first', 'Optimisation vitesse, balises et structure SEO', 'Tests qualité et compatibilité navigateurs'],
+    },
+    {
+      label: 'Étape 4',
+      title: 'Lancement & suivi des performances',
+      desc:  'Mise en ligne accompagnée de tests complets, puis suivi des performances avec reporting mensuel pour ajuster la stratégie en continu.',
+      checks: ['Mise en ligne et configuration serveur', 'Suivi Google Analytics & Search Console', 'Rapport mensuel et recommandations'],
+    },
+  ];
+
+  function updateFloatCard(stage) {
+    const d       = stageData[stage];
+    const content = document.getElementById('floatContent');
+    content.classList.add('fade-out');
+    setTimeout(() => {
+      document.getElementById('stageLabel').textContent = d.label;
+      document.getElementById('stageTitle').textContent = d.title;
+      document.getElementById('stageDesc').textContent  = d.desc;
+      const list = document.getElementById('stageChecklist');
+      list.innerHTML = d.checks.map(c => `<li>${c}</li>`).join('');
+      content.classList.remove('fade-out');
+      content.classList.add('fade-in');
+      setTimeout(() => content.classList.remove('fade-in'), 300);
+    }, 200);
+  }
+
+  document.querySelectorAll('.step').forEach(step => {
+    step.addEventListener('click', () => {
+      document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+      step.classList.add('active');
+      updateFloatCard(parseInt(step.dataset.stage));
+    });
+  });
+
+  /* ---------- FAQ accordion ---------- */
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-q').addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  /* ---------- Contact form — Formspree ---------- */
+  // ⚙️ Remplace la valeur ci-dessous par ton endpoint Formspree
+  // Ex : 'https://formspree.io/f/xyzabc12'
+  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/meepwykl';
+
+  const form      = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('submitBtn');
+  const success   = document.getElementById('formSuccess');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+
+    submitBtn.disabled    = true;
+    submitBtn.textContent = 'Envoi en cours…';
+
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method:  'POST',
+        body:    new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        form.style.display    = 'none';
+        success.style.display = 'block';
+      } else {
+        throw new Error('Erreur serveur');
+      }
+    } catch {
+      submitBtn.disabled    = false;
+      submitBtn.textContent = 'Envoyer la demande';
+      alert('Une erreur est survenue. Contacte-moi directement au 06 03 41 89 15.');
+    }
+  });
+
+  /* ---------- Active nav link on scroll ---------- */
+  const sections  = document.querySelectorAll('section[id]');
+  const navAnchors = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let cur = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 120) cur = s.id;
+    });
+    navAnchors.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === `#${cur}`);
+    });
+  }, { passive: true });
+
+  /* ---------- Custom cursor ---------- */
+  (function () {
+    const cursor = document.getElementById('cursor');
+    if (!cursor || !matchMedia('(pointer: fine)').matches) return;
+    document.addEventListener('mousemove', function (e) {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+    }, { passive: true });
+    document.addEventListener('mouseover', function (e) {
+      if (e.target.closest('a, button, [role="button"], .custom-select, label, input, textarea, select, .faq-q, .p-item')) {
+        cursor.classList.add('cursor-hover');
+      } else {
+        cursor.classList.remove('cursor-hover');
+      }
+    });
+  })();
+
+  /* ---------- Intro overlay ---------- */
+  (function () {
+    const overlay = document.getElementById('intro-overlay');
+    setTimeout(function () {
+      overlay.classList.add('intro-out');
+      document.body.classList.remove('intro-active');
+      setTimeout(function () { overlay.remove(); }, 480);
+    }, 1050);
+  })();
+
+  /* ---------- Custom Select ---------- */
+  (function () {
+    const wrap     = document.getElementById('customSelect');
+    const trigger  = document.getElementById('customSelectTrigger');
+    const label    = document.getElementById('customSelectLabel');
+    const dropdown = document.getElementById('customSelectDropdown');
+    const hidden   = document.getElementById('ftype');
+    const options  = dropdown.querySelectorAll('.custom-select-option');
+
+    function open()  { wrap.classList.add('open'); }
+    function close() { wrap.classList.remove('open'); }
+    function toggle(){ wrap.classList.contains('open') ? close() : open(); }
+
+    trigger.addEventListener('click', toggle);
+    wrap.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+      if (e.key === 'Escape') close();
+    });
+
+    options.forEach(opt => {
+      opt.addEventListener('click', () => {
+        options.forEach(o => o.classList.remove('is-active'));
+        opt.classList.add('is-active');
+        label.textContent = opt.textContent;
+        trigger.classList.add('has-value');
+        hidden.value = opt.dataset.value;
+        close();
+      });
+    });
+
+    document.addEventListener('click', e => {
+      if (!wrap.contains(e.target)) close();
+    });
+  })();
+</script>
+
+</body>
+</html>
