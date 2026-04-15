@@ -237,75 +237,48 @@
       line-height: 1.7;
     }
 
-    /* Tableau prix */
-    .price-table {
-      width: 100%;
-      border-collapse: separate;
-      border-spacing: 0;
-      margin: 32px 0;
-      background: var(--bg-card);
-      border: 1px solid var(--border-2);
-      border-radius: 14px;
-      overflow: hidden;
-    }
-    .price-table thead tr {
+    /* Tableau prix — cartes flexibles */
+    .price-cards { margin: 28px 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--border-2); }
+    .price-card-header {
+      display: grid; grid-template-columns: 2fr 1fr 1fr;
       background: var(--bg-card-2);
+      padding: 12px 18px;
+      font-size: 11px; font-weight: 700;
+      letter-spacing: .07em; text-transform: uppercase;
+      color: var(--g3);
       border-bottom: 1px solid var(--border-2);
     }
-    .price-table thead th {
-      padding: 14px 20px;
-      text-align: left;
-      color: var(--g3);
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-    .price-table thead th:nth-child(2),
-    .price-table thead th:nth-child(3) { text-align: right; }
-    .price-table tbody tr {
+    .price-card-row {
+      display: grid; grid-template-columns: 2fr 1fr 1fr;
+      align-items: center;
+      padding: 16px 18px;
+      background: var(--bg-card);
       border-top: 1px solid var(--border);
       transition: background .15s;
+      gap: 8px;
     }
-    .price-table tbody tr:hover { background: rgba(255,255,255,.025); }
-    .price-table tbody td {
-      padding: 18px 20px;
-      vertical-align: middle;
-      font-size: 14px;
-    }
-    .price-table tbody td:first-child {
-      font-weight: 700;
-      color: var(--white);
-      width: 40%;
-    }
-    .td-sub {
-      font-size: 12px;
-      font-weight: 400;
-      color: var(--g3);
-      margin-top: 3px;
-    }
-    .price-table tbody td:nth-child(2) {
-      color: var(--g2);
-      text-align: right;
-      white-space: nowrap;
-    }
-    .price-table tbody td:nth-child(3) {
-      text-align: right;
-      white-space: nowrap;
-    }
-    .price-loyb {
-      font-weight: 800;
-      color: var(--accent-2);
-    }
+    .price-card-row:hover { background: rgba(255,255,255,.025); }
+    .price-card-name { font-size: 14px; font-weight: 700; color: var(--white); display: flex; flex-direction: column; gap: 3px; }
+    .td-sub { font-size: 12px; font-weight: 400; color: var(--g3); }
+    .price-card-market { font-size: 13px; color: var(--g2); }
+    .price-card-loyb { font-size: 14px; font-weight: 800; color: var(--accent-2); display: flex; flex-direction: column; gap: 4px; }
     .badge-best {
-      display: block;
+      display: inline-block; width: fit-content;
       font-size: 10px; font-weight: 700;
-      padding: 3px 8px; border-radius: 100px;
-      background: rgba(96,165,250,.15);
-      color: var(--accent-2);
-      margin-top: 4px;
+      padding: 2px 7px; border-radius: 100px;
+      background: rgba(96,165,250,.15); color: var(--accent-2);
       letter-spacing: .04em;
-      text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      .price-card-header { display: none; }
+      .price-card-row {
+        grid-template-columns: 1fr;
+        padding: 16px;
+        gap: 10px;
+      }
+      .price-card-market::before { content: "Prix marché : "; font-size: 11px; color: var(--g3); font-weight: 600; letter-spacing: .05em; text-transform: uppercase; display: block; margin-bottom: 2px; }
+      .price-card-loyb::before  { content: "Prix Loyb : ";   font-size: 11px; color: var(--g3); font-weight: 600; letter-spacing: .05em; text-transform: uppercase; display: block; margin-bottom: 2px; }
     }
 
     /* Carte comparaison */
@@ -476,41 +449,28 @@
     }
     @media (max-width: 768px) {
       #nav .nav-links, #nav .nav-sep { display: none; }
-      #nav .nav-cta.menu-open { display: none; }
+      #nav .nav-cta { display: none; }
       .hamburger { display: flex; }
       .nav-right { flex: 1; justify-content: flex-end; }
       .nav-logo img { height: 56px; }
-      #article-hero { padding: 110px 0 36px; }
-      #article-hero h1 { font-size: clamp(24px, 6vw, 40px); }
+      #article-hero { padding: 100px 0 32px; }
+      #article-hero h1 { font-size: clamp(22px, 5.5vw, 38px); }
       .compare-grid { grid-template-columns: 1fr; gap: 14px; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
       .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
     }
     @media (max-width: 480px) {
       .container, .container-narrow { padding: 0 16px; }
-      #article-hero { padding: 90px 0 28px; }
-      #article-hero h1 { font-size: 22px; line-height: 1.2; }
       #article-content { padding: 24px 0 56px; }
       .article-body { font-size: 15px; }
-      .article-body h2 { font-size: 19px; margin-top: 28px; }
+      .article-body h2 { font-size: 18px; margin-top: 28px; }
       .article-body h3 { font-size: 15px; }
-      .article-body p, .article-body li { word-break: break-word; }
-      .price-table-wrap {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        margin: 20px -16px;
-        padding: 0 16px;
-        width: calc(100% + 32px);
-      }
-      .price-table { min-width: 420px; border-radius: 0; border-left: none; border-right: none; }
-      .price-table thead th, .price-table tbody td { padding: 12px 10px; font-size: 12px; }
       .sidebar-card { padding: 18px; }
       .sidebar-offer { flex-direction: column; gap: 4px; }
       .article-cta { padding: 20px 16px; margin-top: 32px; }
       .article-cta h3 { font-size: 18px; }
       .cta-btns { flex-direction: column; }
       .cta-btns .btn { justify-content: center; width: 100%; }
-      .footer-grid { grid-template-columns: 1fr; gap: 24px; }
     }
   </style>
 </head>
@@ -597,56 +557,32 @@
 
       <h2>Les différents types de sites web et leurs prix</h2>
 
-      <div class="price-table-wrap">
-      <table class="price-table">
-        <thead>
-          <tr>
-            <th>Type de site</th>
-            <th>Prix marché</th>
-            <th>Prix Loyb</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              Site vitrine
-              <div class="td-sub">3 à 6 pages, présentation de votre activité</div>
-            </td>
-            <td>700 € – 5 000 €</td>
-            <td class="price-loyb">
-              700 €
-              <span class="badge-best">Meilleur rapport qualité/prix</span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Landing page
-              <div class="td-sub">Page unique orientée conversion</div>
-            </td>
-            <td>500 € – 2 500 €</td>
-            <td class="price-loyb">Sur devis</td>
-          </tr>
-          <tr>
-            <td>
-              Site e-commerce
-              <div class="td-sub">Boutique en ligne avec paiement</div>
-            </td>
-            <td>2 000 € – 15 000 €</td>
-            <td class="price-loyb">Sur devis</td>
-          </tr>
-          <tr>
-            <td>
-              Référencement naturel (SEO)
-              <div class="td-sub">Stratégie complète sur 3 mois</div>
-            </td>
-            <td>500 € – 2 000 €/mois</td>
-            <td class="price-loyb">
-              290 €/mois
-              <span class="badge-best">3 mois minimum</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="price-cards">
+        <div class="price-card-header">
+          <span>Type de site</span>
+          <span>Prix marché</span>
+          <span>Prix Loyb</span>
+        </div>
+        <div class="price-card-row">
+          <div class="price-card-name">Site vitrine<span class="td-sub">3 à 6 pages, présentation de votre activité</span></div>
+          <div class="price-card-market">700 € – 5 000 €</div>
+          <div class="price-card-loyb">700 € <span class="badge-best">Meilleur rapport</span></div>
+        </div>
+        <div class="price-card-row">
+          <div class="price-card-name">Landing page<span class="td-sub">Page unique orientée conversion</span></div>
+          <div class="price-card-market">500 € – 2 500 €</div>
+          <div class="price-card-loyb">Sur devis</div>
+        </div>
+        <div class="price-card-row">
+          <div class="price-card-name">Site e-commerce<span class="td-sub">Boutique en ligne avec paiement</span></div>
+          <div class="price-card-market">2 000 € – 15 000 €</div>
+          <div class="price-card-loyb">Sur devis</div>
+        </div>
+        <div class="price-card-row">
+          <div class="price-card-name">Référencement SEO<span class="td-sub">Stratégie complète sur 3 mois</span></div>
+          <div class="price-card-market">500 € – 2 000 €/mois</div>
+          <div class="price-card-loyb">290 €/mois <span class="badge-best">3 mois min.</span></div>
+        </div>
       </div>
 
       <h2>Pourquoi les prix varient autant ?</h2>
