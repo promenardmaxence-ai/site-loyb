@@ -237,38 +237,75 @@
       line-height: 1.7;
     }
 
-    /* Tableau prix -->
+    /* Tableau prix */
     .price-table {
-      width: 100%; border-collapse: collapse;
-      margin: 32px 0; font-size: 15px;
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin: 32px 0;
+      background: var(--bg-card);
+      border: 1px solid var(--border-2);
+      border-radius: 14px;
+      overflow: hidden;
     }
-    .price-table thead th {
-      padding: 14px 18px; text-align: left;
+    .price-table thead tr {
       background: var(--bg-card-2);
-      color: var(--g2); font-size: 12px;
-      font-weight: 700; letter-spacing: .06em;
-      text-transform: uppercase;
       border-bottom: 1px solid var(--border-2);
     }
-    .price-table thead th:first-child { border-radius: 10px 0 0 0; }
-    .price-table thead th:last-child  { border-radius: 0 10px 0 0; }
-    .price-table tbody tr { border-bottom: 1px solid var(--border); transition: background .15s; }
-    .price-table tbody tr:hover { background: rgba(255,255,255,.02); }
-    .price-table tbody td { padding: 16px 18px; color: var(--g1); vertical-align: top; }
-    .price-table tbody td:first-child { font-weight: 700; color: var(--white); }
-    .price-market { color: var(--g2); }
-    .price-loyb {
-      font-weight: 800; color: var(--accent-2);
+    .price-table thead th {
+      padding: 14px 20px;
+      text-align: left;
+      color: var(--g3);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .price-table thead th:nth-child(2),
+    .price-table thead th:nth-child(3) { text-align: right; }
+    .price-table tbody tr {
+      border-top: 1px solid var(--border);
+      transition: background .15s;
+    }
+    .price-table tbody tr:hover { background: rgba(255,255,255,.025); }
+    .price-table tbody td {
+      padding: 18px 20px;
+      vertical-align: middle;
+      font-size: 14px;
+    }
+    .price-table tbody td:first-child {
+      font-weight: 700;
+      color: var(--white);
+      width: 40%;
+    }
+    .td-sub {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--g3);
+      margin-top: 3px;
+    }
+    .price-table tbody td:nth-child(2) {
+      color: var(--g2);
+      text-align: right;
       white-space: nowrap;
     }
-    .price-loyb .badge-best {
-      display: inline-block;
+    .price-table tbody td:nth-child(3) {
+      text-align: right;
+      white-space: nowrap;
+    }
+    .price-loyb {
+      font-weight: 800;
+      color: var(--accent-2);
+    }
+    .badge-best {
+      display: block;
       font-size: 10px; font-weight: 700;
-      padding: 2px 8px; border-radius: 100px;
+      padding: 3px 8px; border-radius: 100px;
       background: rgba(96,165,250,.15);
       color: var(--accent-2);
-      margin-left: 6px; vertical-align: middle;
+      margin-top: 4px;
       letter-spacing: .04em;
+      text-align: center;
     }
 
     /* Carte comparaison */
@@ -546,34 +583,40 @@
           <tr>
             <td>
               Site vitrine
-              <div style="font-size:13px;font-weight:400;color:var(--g3);margin-top:4px;">3 à 6 pages, présentation de votre activité</div>
+              <div class="td-sub">3 à 6 pages, présentation de votre activité</div>
             </td>
-            <td class="price-market">700 € – 5 000 €</td>
-            <td class="price-loyb">700 € <span class="badge-best">Meilleur rapport qualité/prix</span></td>
+            <td>700 € – 5 000 €</td>
+            <td class="price-loyb">
+              700 €
+              <span class="badge-best">Meilleur rapport qualité/prix</span>
+            </td>
           </tr>
           <tr>
             <td>
               Landing page
-              <div style="font-size:13px;font-weight:400;color:var(--g3);margin-top:4px;">Page unique orientée conversion</div>
+              <div class="td-sub">Page unique orientée conversion</div>
             </td>
-            <td class="price-market">500 € – 2 500 €</td>
+            <td>500 € – 2 500 €</td>
             <td class="price-loyb">Sur devis</td>
           </tr>
           <tr>
             <td>
               Site e-commerce
-              <div style="font-size:13px;font-weight:400;color:var(--g3);margin-top:4px;">Boutique en ligne avec paiement</div>
+              <div class="td-sub">Boutique en ligne avec paiement</div>
             </td>
-            <td class="price-market">2 000 € – 15 000 €</td>
+            <td>2 000 € – 15 000 €</td>
             <td class="price-loyb">Sur devis</td>
           </tr>
           <tr>
             <td>
               Référencement naturel (SEO)
-              <div style="font-size:13px;font-weight:400;color:var(--g3);margin-top:4px;">Stratégie complète sur 3 mois</div>
+              <div class="td-sub">Stratégie complète sur 3 mois</div>
             </td>
-            <td class="price-market">500 € – 2 000 €/mois</td>
-            <td class="price-loyb">290 €/mois <span class="badge-best">3 mois</span></td>
+            <td>500 € – 2 000 €/mois</td>
+            <td class="price-loyb">
+              290 €/mois
+              <span class="badge-best">3 mois minimum</span>
+            </td>
           </tr>
         </tbody>
       </table>
