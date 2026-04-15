@@ -475,16 +475,69 @@
     /* ============================================================
        RESPONSIVE
     ============================================================ */
-    @media (max-width: 700px) {
+    @media (max-width: 900px) {
+      .article-layout { grid-template-columns: 1fr; }
+      .article-sidebar { position: static; }
+      /* Sidebar visible en bas sur tablette */
+      .article-sidebar { order: 2; }
+      .article-body    { order: 1; }
+    }
+
+    @media (max-width: 620px) {
+      /* Navbar */
       .nav-sep, .nav-links { display: none; }
       .hamburger { display: flex; }
-      #article-hero { padding: 130px 0 48px; }
-      .compare-grid { grid-template-columns: 1fr; }
-      .loyb-offer { flex-direction: column; align-items: flex-start; gap: 6px; }
-      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
-      .price-table { font-size: 13px; }
-      .price-table thead th, .price-table tbody td { padding: 12px 10px; }
-      .article-cta { padding: 28px 20px; }
+      .nav-logo img { height: 60px; }
+      #nav { padding: 12px 0; }
+
+      /* Container */
+      .container, .container-narrow { padding: 0 18px; }
+
+      /* Hero article */
+      #article-hero { padding: 100px 0 36px; }
+      #article-hero h1 { font-size: clamp(26px, 7vw, 38px); }
+      .article-meta-bar { gap: 10px; }
+
+      /* Contenu article */
+      #article-content { padding: 32px 0 64px; }
+      .article-body { font-size: 15px; }
+      .article-body h2 { font-size: 20px; margin-top: 36px; }
+      .article-body h3 { font-size: 16px; }
+
+      /* Tableau prix : scroll horizontal sur mobile */
+      .price-table-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: 32px 0;
+        border-radius: 14px;
+        border: 1px solid var(--border-2);
+      }
+      .price-table {
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        min-width: 460px;
+      }
+      .price-table thead th,
+      .price-table tbody td { padding: 14px 14px; font-size: 13px; }
+
+      /* Comparaison */
+      .compare-grid { grid-template-columns: 1fr; gap: 14px; }
+
+      /* Sidebar */
+      .sidebar-card { padding: 20px; }
+      .sidebar-offer { padding: 10px 12px; }
+
+      /* CTA */
+      .article-cta { padding: 24px 18px; margin-top: 40px; }
+      .article-cta h3 { font-size: 20px; }
+      .cta-btns { flex-direction: column; }
+      .cta-btns .btn { justify-content: center; }
+
+      /* Footer */
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+      footer { padding: 48px 0 28px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; gap: 8px; }
     }
   </style>
 </head>
@@ -571,6 +624,7 @@
 
       <h2>Les différents types de sites web et leurs prix</h2>
 
+      <div class="price-table-wrap">
       <table class="price-table">
         <thead>
           <tr>
@@ -620,6 +674,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
 
       <h2>Pourquoi les prix varient autant ?</h2>
       <p>
