@@ -80,7 +80,7 @@
     a   { color: inherit; }
 
     .container { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
-    .container-narrow { max-width: 760px; margin: 0 auto; padding: 0 28px; }
+    .container-narrow { max-width: 900px; margin: 0 auto; padding: 0 28px; }
 
     .badge {
       display: inline-flex; align-items: center; gap: 8px;
@@ -341,6 +341,51 @@
     }
 
     /* ============================================================
+       LAYOUT DEUX COLONNES
+    ============================================================ */
+    .article-layout {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 48px;
+      align-items: start;
+    }
+    .article-sidebar {
+      position: sticky;
+      top: 120px;
+    }
+    .sidebar-card {
+      background: linear-gradient(135deg, rgba(37,99,235,.1) 0%, rgba(37,99,235,.03) 100%);
+      border: 1px solid rgba(37,99,235,.25);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 20px;
+    }
+    .sidebar-card h4 {
+      font-size: 15px; font-weight: 900;
+      color: var(--white); margin-bottom: 6px;
+      letter-spacing: -.02em;
+    }
+    .sidebar-card p {
+      font-size: 13px; color: var(--g2);
+      margin-bottom: 18px; line-height: 1.6;
+    }
+    .sidebar-offers { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+    .sidebar-offer {
+      display: flex; align-items: center; justify-content: space-between;
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--border);
+      border-radius: 9px; padding: 12px 14px;
+    }
+    .sidebar-offer-name { font-size: 13px; font-weight: 700; color: var(--white); }
+    .sidebar-offer-price { font-size: 15px; font-weight: 900; color: var(--accent-2); white-space: nowrap; }
+    .sidebar-card .btn { width: 100%; justify-content: center; }
+
+    @media (max-width: 900px) {
+      .article-layout { grid-template-columns: 1fr; }
+      .article-sidebar { position: static; }
+    }
+
+    /* ============================================================
        CTA ARTICLE
     ============================================================ */
     .article-cta {
@@ -478,17 +523,13 @@
 ============================================================ -->
 <section id="article-content">
   <div class="container-narrow">
-    <div class="article-body fade-up">
+    <div class="article-layout fade-up">
 
-      <div class="intro-box">
-        <strong>Ce que vous allez apprendre :</strong> les vrais prix d'un site web en 2026, ce qui justifie les écarts de tarifs, et ce que propose Loyb pour les entreprises de Rouen et de Normandie.
-      </div>
+    <!-- COLONNE PRINCIPALE -->
+    <div class="article-body">
 
       <p>
-        "Combien ça coûte, un site web ?" C'est souvent la première question — et la réponse honnête est : <strong>ça dépend</strong>. Un site vitrine chez un freelance débutant peut coûter 300 €. La même prestation dans une grande agence parisienne peut atteindre 8 000 €. Entre les deux, comment s'y retrouver ?
-      </p>
-      <p>
-        Dans cet article, on vous explique les fourchettes de prix réelles du marché en 2026, ce qui justifie les différences, et pourquoi un prix bas n'est pas toujours une bonne affaire.
+        Un site vitrine peut coûter <strong>300 €</strong> chez un freelance débutant ou <strong>8 000 €</strong> dans une grande agence. Entre les deux, voici les vrais prix du marché en 2026 — et ce que propose Loyb.
       </p>
 
       <h2>Les différents types de sites web et leurs prix</h2>
@@ -588,38 +629,6 @@
         </div>
       </div>
 
-      <div class="loyb-box">
-        <h3>Ce que propose Loyb à Rouen</h3>
-        <p>Un accompagnement complet, un interlocuteur unique, des sites pensés pour convertir — à un tarif accessible pour les TPE et PME de Normandie.</p>
-        <div class="loyb-offers">
-          <div class="loyb-offer">
-            <div>
-              <div class="loyb-offer-name">Site web vitrine</div>
-              <div class="loyb-offer-desc">Design premium, responsive, optimisé SEO, livré en 2 à 3 semaines</div>
-            </div>
-            <div class="loyb-offer-price">700 €</div>
-          </div>
-          <div class="loyb-offer">
-            <div>
-              <div class="loyb-offer-name">Référencement naturel</div>
-              <div class="loyb-offer-desc">Audit, stratégie de contenu, optimisation technique, suivi mensuel</div>
-            </div>
-            <div class="loyb-offer-price">290 €/mois</div>
-          </div>
-          <div class="loyb-offer">
-            <div>
-              <div class="loyb-offer-name">Community management</div>
-              <div class="loyb-offer-desc">Création de contenu photo & vidéo, gestion des réseaux sociaux</div>
-            </div>
-            <div class="loyb-offer-price">Sur devis</div>
-          </div>
-        </div>
-        <div style="display:flex;gap:14px;flex-wrap:wrap;">
-          <a href="index.html#contact" class="btn btn-primary">Demander un devis gratuit</a>
-          <a href="index.html#services" class="btn btn-outline">Voir nos services</a>
-        </div>
-      </div>
-
       <h2>À retenir avant de choisir</h2>
       <ul>
         <li><strong>Le prix seul ne dit rien</strong> — regardez les réalisations, les avis clients, le suivi proposé.</li>
@@ -628,11 +637,7 @@
         <li><strong>Choisissez un prestataire local</strong> — il connaît votre marché, vos concurrents rouennais, et vous pouvez le rencontrer.</li>
       </ul>
 
-      <p>
-        Chez Loyb, chaque projet commence par un <strong>appel découverte gratuit</strong> pour comprendre votre activité et vous proposer la solution la mieux adaptée — sans jargon, sans engagement.
-      </p>
-
-      <!-- CTA -->
+      <!-- CTA bas de page -->
       <div class="article-cta">
         <h3>Votre site web à Rouen, dès 700 €</h3>
         <p>Devis gratuit sous 24h. On vous explique tout, simplement.</p>
@@ -643,6 +648,39 @@
       </div>
 
     </div>
+    <!-- FIN COLONNE PRINCIPALE -->
+
+    <!-- SIDEBAR -->
+    <aside class="article-sidebar">
+      <div class="sidebar-card">
+        <h4>Nos tarifs à Rouen</h4>
+        <p>Un interlocuteur unique, des sites pensés pour convertir.</p>
+        <div class="sidebar-offers">
+          <div class="sidebar-offer">
+            <span class="sidebar-offer-name">Site vitrine</span>
+            <span class="sidebar-offer-price">700 €</span>
+          </div>
+          <div class="sidebar-offer">
+            <span class="sidebar-offer-name">Référencement SEO</span>
+            <span class="sidebar-offer-price">290 €/mois</span>
+          </div>
+          <div class="sidebar-offer">
+            <span class="sidebar-offer-name">Community management</span>
+            <span class="sidebar-offer-price">Sur devis</span>
+          </div>
+        </div>
+        <a href="index.html#contact" class="btn btn-primary">Devis gratuit sous 24h</a>
+      </div>
+      <div class="sidebar-card" style="background:var(--bg-card);border-color:var(--border-2);">
+        <h4>Lire aussi</h4>
+        <p style="margin-bottom:0;">
+          <a href="actualites.html" style="color:var(--accent-2);text-decoration:none;font-size:14px;">← Retour aux actualités</a>
+        </p>
+      </div>
+    </aside>
+    <!-- FIN SIDEBAR -->
+
+    </div><!-- FIN LAYOUT -->
   </div>
 </section>
 
