@@ -30,7 +30,7 @@
        RESET & BASE
     ============================================================ */
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body { overflow-x: hidden; max-width: 100%; }
+    html, body { overflow-x: hidden; max-width: 100vw; width: 100%; }
 
     :root {
       --bg:          #050508;
@@ -445,22 +445,27 @@
       #nav .nav-cta.menu-open { display: none; }
       .hamburger { display: flex; }
       .nav-right { flex: 1; justify-content: flex-end; }
-      #page-hero { padding: 120px 0 56px; }
-      .page-hero-inner h1 { font-size: clamp(32px, 8vw, 52px); }
+      .nav-logo img { height: 56px; }
+      #page-hero { padding: 110px 0 48px; }
+      .page-hero-inner h1 { font-size: clamp(28px, 7vw, 48px); }
       .articles-grid { grid-template-columns: 1fr 1fr; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
       .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
     }
     @media (max-width: 480px) {
-      .container { padding: 0 18px; }
-      #page-hero { padding: 100px 0 40px; }
-      .articles-grid { grid-template-columns: 1fr; gap: 18px; }
-      .article-thumb, .article-thumb-placeholder { height: 180px; }
-      .article-body { padding: 18px; }
-      .filters { gap: 8px; margin-bottom: 28px; }
-      .filter-btn { padding: 8px 14px; font-size: 12px; }
-      #cta-bottom { padding: 56px 0 64px; }
-      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+      .container { padding: 0 16px; }
+      #page-hero { padding: 90px 0 36px; }
+      .page-hero-inner h1 { font-size: 28px; }
+      .page-hero-inner p { font-size: 14px; }
+      .articles-grid { grid-template-columns: 1fr; gap: 16px; }
+      .article-thumb, .article-thumb-placeholder { height: 170px; }
+      .article-body { padding: 16px; }
+      .article-body h2 { font-size: 15px; }
+      .filters { gap: 8px; margin-bottom: 24px; }
+      .filter-btn { padding: 7px 12px; font-size: 12px; }
+      #cta-bottom { padding: 48px 0 56px; }
+      #cta-bottom h2 { font-size: 24px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 24px; }
     }
   </style>
 </head>
