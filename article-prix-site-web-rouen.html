@@ -472,9 +472,28 @@
       .cta-btns { flex-direction: column; }
       .cta-btns .btn { justify-content: center; width: 100%; }
     }
+  @media (pointer: fine) {
+    * { cursor: none !important; }
+    #cursor {
+      position: fixed; z-index: 99999;
+      width: 14px; height: 14px;
+      background: rgba(10,10,20,.75);
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 8px 2px rgba(37,99,235,.45);
+      transition: transform .08s ease, opacity .2s ease;
+      will-change: left, top;
+    }
+    #cursor.cursor-hover {
+      transform: translate(-50%, -50%) scale(2.2);
+      background: rgba(37,99,235,.5);
+    }
+  }
   </style>
 </head>
 <body>
+<div id="cursor"></div>
 
 <!-- NAVBAR -->
 <nav id="nav">
@@ -777,6 +796,23 @@
     });
   }, { threshold: 0.08 });
   document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+
+  /* Custom cursor */
+  (function () {
+    const cursor = document.getElementById('cursor');
+    if (!cursor || !matchMedia('(pointer: fine)').matches) return;
+    document.addEventListener('mousemove', function (e) {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+    }, { passive: true });
+    document.addEventListener('mouseover', function (e) {
+      if (e.target.closest('a, button, [role="button"], label, input, textarea')) {
+        cursor.classList.add('cursor-hover');
+      } else {
+        cursor.classList.remove('cursor-hover');
+      }
+    });
+  })();
 </script>
 
 </body>
